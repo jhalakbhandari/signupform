@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sign Up Form</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form
+        class="login_form"
+        method="post"
+        name="form"
+        action="home.html"
+        onsubmit="return validated()"
+      >
+        <div class="font" for="username">Username</div>
+        <input type="text" id="username" name="username" /><br />
+        <div id="username_error">Please fill your username</div>
+        <div class="font font2" for="password">Password</div>
+        <input type="text" id="password" name="password" /><br />
+        <div id="password_error">Please fill your password</div>
+        <div id="password_err">Password length should be greater than 6</div>
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
